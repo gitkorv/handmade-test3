@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    height: 100vh;
+    max-width: 1000px;
+    text-align: center;
+    /* background-color: blue; */
+}
+
+.main-wrapper {
+    display: grid;
+    height: 100vh;
+    max-width: 1000px;
+    grid-template-areas: 
+    "t  t  t"
+    "l  c  r"
+    "b  b  b";
+    grid-template-columns:20px 1fr 20px;
+    grid-template-rows: 40px 1fr 40px;
+}
+
+.top {grid-area: t;}
+
+.left {grid-area: l;}
+
+.right {grid-area: r;}
+
+.bottom {grid-area: b;}
+
+.top, .bottom, .left, .right {
+    display: grid;
+    /* background-color: rgb(209, 209, 209); */
+    align-items: center;
+}
+
+.center {
+    grid-area: c;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.karl-div {
+    width: 50%;
+    margin-right: 12%;
+    margin-bottom: -13%;
+
+    /* background-color: blue; */
+}
+.rickard-div {
+    /* margin-top: -50px; */
+    width: 95%;
+    margin-bottom: -7%;
+}
+.vestin-div {
+    width: 70%;
+    margin-left: 15%;
+    /* background-color: blue; */
+}
+.draw-circle {
+    position: absolute;
+    /* height: 80%; */
+    width: 75%;
+    max-width: 750px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.mask {
+    fill: none;
+    stroke: #fff;
+    stroke-dasharray: 1500;
+    stroke-dashoffset: 1500;
+    animation: strokeOffset 0.35s linear forwards;
+}
+
+@keyframes strokeOffset {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+/* Karl */
+
+#mask-karl-k1 {
+    animation-delay: 0.1s;
+}
+#mask-karl-k2 {
+    animation-delay: 0.2s;
+}
+#mask-karl-a1 {
+    animation-delay: 0.4s;
+}
+#mask-karl-a2 {
+    animation-delay: 0.6s;
+}
+#mask-karl-r1 {
+    animation-delay: 0.8s;
+}
+#mask-karl-r2 {
+    animation-delay: 1s;
+}
+#mask-karl-l {
+    animation-delay: 1.2s;
+}
+
+/* Rickard */
+
+#mask-rickard-r1 {
+    animation-delay: 1.4s;
+}
+#mask-rickard-r2 {
+    animation-delay: 1.6s;
+}
+#mask-rickard-i1 {
+    animation-delay: 1.8s;
+}
+#mask-rickard-i2 {
+    animation-delay: 2s;
+}
+#mask-rickard-c {
+    animation-delay: 2.2s;
+}
+#mask-rickard-k1 {
+    animation-delay: 2.4s;
+}
+#mask-rickard-k2 {
+    animation-delay: 2.6s;
+}
+#mask-rickard-a {
+    animation-delay: 2.8s;
+}
+#mask-rickard-rr {
+    animation-delay: 3s;
+}
+#mask-rickard-d {
+    animation-delay: 3.2s;
+}
+
+/* Vestin */
+
+#mask-vestin-v {
+    animation-delay: 3.4s;
+}
+#mask-vestin-e {
+    animation-delay: 3.6s;
+}
+#mask-vestin-s {
+    animation-delay: 3.8s;
+}
+#mask-vestin-t1 {
+    animation-delay: 4s;
+}
+#mask-vestin-t2 {
+    animation-delay: 4.2s;
+}
+#mask-vestin-i1 {
+    animation-delay: 4.4s;
+}
+#mask-vestin-i2 {
+    animation-delay: 4.6s;
+}
+#mask-vestin-n {
+    animation-delay: 4.8s;
+}
+
+.mask-circle {
+    fill: none;
+    stroke: #fff;
+    stroke-dasharray: 5000;
+    stroke-dashoffset: 5000;
+    animation: strokeOffset 0.35s linear forwards;
+}
+
+
+
+#mask-graph-circle {
+    animation-delay: 1s;
+}
