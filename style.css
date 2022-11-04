@@ -73,7 +73,7 @@ body {
     max-width: 1000px;
     /* background-color: aquamarine; */
     justify-content: center;
-    align-items: center;
+    /* align-content: center; */
 }
 
 .circle-container {
@@ -89,8 +89,8 @@ body {
     stroke: #fff;
     stroke-dasharray: 1500;
     stroke-dashoffset: 1500;
-    -webkit-animation: strokeOffset 0.35s linear forwards;;
-    animation: strokeOffset 0.35s linear forwards;
+    -webkit-animation: strokeOffset 0.35s linear forwards;
+            animation: strokeOffset 0.35s linear forwards;
 }
 
 @keyframes strokeOffset {
@@ -194,5 +194,5 @@ body {
 
 
 #mask-graph-circle {
-    animation-delay: 1s;
+    animation-delay: 5s;
 }
