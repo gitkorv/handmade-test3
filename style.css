@@ -74,13 +74,12 @@ body {
     /* background-color: aquamarine; */
     justify-content: center;
     align-items: center;
-
 }
 
 .circle-container {
     display: flex;
-    height: 100%;
     width: 75%;
+    min-height: 50%;
     justify-content: center;
     /* background-color: rgb(206, 191, 191); */
 }
@@ -90,6 +89,7 @@ body {
     stroke: #fff;
     stroke-dasharray: 1500;
     stroke-dashoffset: 1500;
+    -webkit-animation: strokeOffset 0.35s linear forwards;;
     animation: strokeOffset 0.35s linear forwards;
 }
 
