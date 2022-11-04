@@ -76,10 +76,10 @@ body {
 }
 
 .circle-container {
-    display: flex;
-    width: 75%;
-    justify-content: center;
-    /* background-color: rgb(206, 191, 191); */
+    display: block;
+    width: 100%;
+    /* justify-content: center; */
+    background-color: rgb(206, 191, 191);
 }
 
 .mask {
