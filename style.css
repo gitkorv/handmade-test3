@@ -6,22 +6,23 @@
 
 body {
     margin: 0 auto;
-    height: 100dvh;
+    height: 100%;
     max-width: 1000px;
     text-align: center;
-    /* background-color: blue; */
+    background-color: blue;
 }
 
 .main-wrapper {
     display: grid;
-    height: 100vh;
+    height: 100dvh;
     max-width: 1000px;
     grid-template-areas: 
     "t  t  t"
     "l  c  r"
     "b  b  b";
-    grid-template-columns:20px 1fr 20px;
-    grid-template-rows: 40px 1fr 40px;
+    grid-template-columns:20px auto 20px;
+    grid-template-rows: 40px auto 40px;
+    background-color: aquamarine;
 }
 
 .top {grid-area: t;}
@@ -34,7 +35,7 @@ body {
 
 .top, .bottom, .left, .right {
     display: grid;
-    /* background-color: rgb(209, 209, 209); */
+    background-color: rgb(209, 209, 209);
     align-items: center;
 }
 
